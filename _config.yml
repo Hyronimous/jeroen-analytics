@@ -1,3 +1,30 @@
 title: Jeroen Analytics
 description: Systems, data, markets, and thinking in public.
-theme: minima
+
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+plugins:
+  - jekyll-include-cache
+
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: false
+      share: false
+      toc: true
+
+
+tag_archive:
+  type: liquid
+  path: /tags/
+
+category_archive:
+  type: liquid
+  path: /categories/
