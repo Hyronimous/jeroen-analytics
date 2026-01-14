@@ -5,4 +5,4 @@ permalink: /about/
 ---
 
 Jeroen.  
-Power BI, investing systems, and analytical thinking.
+Power BI, investing systems, design and analytical thinking.
