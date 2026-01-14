@@ -1,7 +1,9 @@
----
-layout: home
----
+title: Jeroen Analytics
+description: Systems, data, markets, and thinking in public.
 
-Welcome.
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 
-This is where I publish my thinking on data, markets, and systems.
+plugins:
+  - jekyll-include-cache
+
+permalink: /:year/:month/:day/:title/
