@@ -19,12 +19,15 @@ Maar in een wereld met SaaS, OneLake, Spark en notebooks is die tijd grotendeels
 
 Ik denk dat je beter met lagen kunt werken die refereren aan een fabriek. Een fabriek heeft verschillende afdelingen en producten gaan door verschillende fases.
 Laten we beginnen met goederenontvangst, of gewoon ontvangst. Je ontvangt data van allerlei kanten. Het blijft in die afdeling totdat het gekeurd is. Vervolgens, als de inspectie is geweest, komt er goedkeuring en mag het verder.
-Dus: ontvangen. Controleren of het aangekomen is. Navraag doen als het wegblijft. Inspecteren van de ontvangen waren en na goedkeuring doorgeven aan het volgende proces.
+Dus: ontvangen. Controleren of het aangekomen is. 
+
+Navraag doen als het wegblijft. Inspecteren van de ontvangen waren en na goedkeuring doorgeven aan het volgende proces.
 In communicatie praat dat makkelijker. “Het zit nog vast in goederenontvang.” Ook een leek die niet veel van database-engineering weet, begrijpt dan onmiddellijk waar het ongeveer is.
 
 Dan komen we in de productie. Hier wordt de ruwe data omgevormd tot goede producten. Eerst wordt de data verbeterd en vervolgens gecombineerd tot kwalitatief goede dataproducten. Je kunt dat, als je wilt, nog splitsen in twee: grondstofverwerking en assemblage.
 Vervolgens test je of de producten van goede kwaliteit zijn. Als dat het geval is, kom je in voorraad gereed product.
 De laatste laag is dan verpakking en logistiek. Hier zorg je ervoor dat de producten bruikbaar zijn voor de eindklant: de handleiding, de verpakking, hulp bij problemen, en de logistiek om het bij de klant te krijgen.
+
 Uiteindelijk zie je hier een beeld ontstaan van een fabriek die data als input heeft en commerciële producten levert die op maat zijn gemaakt voor klanten.
 
 Het voordeel van deze indeling is dat het de discussie vergemakkelijkt. Moet je een verbetering in de data doen? Productie. Wil je een betere sortering mogelijk maken of andere labels? Verpakking.
