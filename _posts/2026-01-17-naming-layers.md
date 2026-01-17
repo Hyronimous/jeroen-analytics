@@ -5,8 +5,6 @@ tags: [fabric, engineering, architecture]
 categories: [thinking]
 ---
 
-## Introductie
-
 Vandaag heb ik aan een project gewerkt. Alles is opgedeeld in landing, bronze, silver en gold. Zoals het hoort. Je kijkt wat er in iedere omgeving gebeurt en je ziet de tussenresultaten.
 Maar toch merk je dat mensen dat elke keer net anders invullen. Hoe komt dat eigenlijk?
 
