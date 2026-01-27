@@ -1,3 +1,11 @@
+---
+title: "Aandachtig opruimen"
+date: 2026-01-27
+tags: [design, inspiration]
+categories: [thinking]
+---
+
+
 Een van de dingen die je als BI-professional altijd doet, is rommel opruimen. Hoe langer ik in het vak zit, hoe belangrijker ik dat ben gaan vinden. Oude proof-of-concepts. Tabellen die toch net niet zo gestructureerd waren opgezet als gehoopt. Nieuwe, mooie visuals die achteraf niet de aandacht trokken die je verwachtte.
 
 En dan zit er maar één ding op: opruimen.
