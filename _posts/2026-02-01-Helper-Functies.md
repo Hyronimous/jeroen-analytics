@@ -18,31 +18,52 @@ Een voorbeeld van zo’n eenvoudige helper-functie:
 ```python
 from pyspark.sql.types import StructType
 from pyspark.sql import DataFrame
-import os
 import pandas as pd
+import os
+from fnmatch import fnmatch
 
-def read_csv(folder: str, schema: StructType = None) -> DataFrame:
+def read_csv(folder: str, schema: StructType = None, delimiter: str = ",", pattern: str = "*.csv") -> DataFrame:
     """
-    Reads all CSV files from a folder and returns a Spark DataFrame.
+    Reads all files matching a pattern from a folder and returns a Spark DataFrame.
 
     Args:
-        folder:  Path to the folder containing the CSV files.
-        schema:  Optional Spark schema to enforce on the DataFrame.
-                 If None, Spark will infer the schema from the data.
+        folder:    Path to the folder containing the files.
+        schema:    Optional Spark schema to enforce on the DataFrame.
+                   If None, Spark will infer the schema from the data.
+        delimiter: Column delimiter used in the files. Defaults to ",".
+        pattern:   Wildcard pattern to filter files on. Defaults to "*.csv".
 
     Returns:
-        A Spark DataFrame with all positions combined.
+        A Spark DataFrame with all matching files combined.
     """
-    csv_files = [f for f in os.listdir(folder) if f.endswith('.csv')]
-    print(f"Found {len(csv_files)} files: {csv_files}")
+
+    files = [f for f in os.listdir(folder) if fnmatch(f, pattern)]
+    print(f"Found {len(files)} files: {files}")
+
+    if not files:
+        raise ValueError(f"No files found matching pattern '{pattern}' in folder '{folder}'")
 
     pandas_df = pd.concat(
-        [pd.read_csv(f"{folder}/{f}") for f in csv_files],
+        [pd.read_csv(f"{folder}/{f}", delimiter=delimiter) for f in files],
         ignore_index=True
     )
     print(f"Total rows: {len(pandas_df)}")
 
     return spark.createDataFrame(pandas_df, schema=schema)
+
+
+
+# # All CSVs
+# df = read_csv(folder)
+
+# # Only  energy files
+# df = read_csv(folder, delimiter=";", pattern="meterstanden_stroom_*.csv")
+
+# # All TXT files
+# df = read_csv(folder, pattern="*.txt")
+
+# # Everything that starts with "meter"
+# df = read_csv(folder, delimiter=";", pattern="meter*")
 ```
 
 Je vertelt alleen waar de CSV-bestanden staan en je krijgt een DataFrame terug met alle CSV-bestanden samengevoegd in één DataFrame. Je kunt hier eventueel nog een zoekstring aan toevoegen, maar veel ingewikkelder moet je het niet maken.
