@@ -5,8 +5,6 @@ tags: [fabric, engineering, architecture, notebooks]
 categories: [architecture, programming, fabric]
 ---
 
-# Helper functions: hero or villain
-
 Wanneer je met PySpark taken uitvoert, zie je al snel dat veel handelingen steeds opnieuw terugkomen. Al snel kom je op het idee om helper-functies te maken. Deze zijn handig, erg handig zelfs. Maar om een quote uit een film te lenen: *“You either die a hero or you live long enough to become the villain.”*
 
 Op een gegeven moment wordt een helper-functie steeds ingewikkelder: meer parameters, meer uitzonderingen en steeds minder hulp beschikbaar. En wie de functie zelf niet heeft geschreven, kent haar niet of vindt het veel te lastig om te gebruiken. Die persoon krijgt een geweldig idee: waarom maak ik zelf niet een helper-functie?
