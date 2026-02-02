@@ -4,7 +4,6 @@ date: 2026-02-02
 tags: [fabric, engineering, architecture, agile, hotspots, technical debt]
 categories: [Architecture, Engineering, Agile]
 ---
-
 *Of: van Agile-principes naar hotspots in Fabric*
 
 ## Inleiding — waarom dit artikel
