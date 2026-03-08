@@ -1,8 +1,8 @@
 ---
-layout: post
 title: "Meerdere datumrollen modelleren in Power BI met Calculation Groups en UDF Function"
 date: 2026-03-08
-categories: powerbi fabric dax
+tags: [fabric, engineering, architecture, notebooks]
+categories: [powerbi, fabric, dax]
 ---
 
 Een scenario dat vaak voorkomt is dat een fact table meerdere datums heeft. Een verkoop fact heeft orderdatum, shipment datum, return datum, factuurdatum en uitendelijk ook een betaaldatum
