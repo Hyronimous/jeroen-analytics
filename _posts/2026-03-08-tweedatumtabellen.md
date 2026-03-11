@@ -36,6 +36,7 @@ Dit is een **flow-analyse tussen twee tijdlijnen**:
 Met slechts één datumtabel kan Power BI maar **één filtercontext tegelijk toepassen**.
 
 Als dezelfde datumtabel zowel rijen als kolommen filtert, krijg je logisch gezien:
+![Order vs Delivery matrix]({{ "/resources/images/order-delivery-matrix.png" | relative_url }})
 
 Wat je dan kunt doen is gebruik maken van een UDF in combinatie met Calculation Groups. Daarnaast maak je ook een tweede datumdimensie aan. Net zoals met de eerste datumdimensie maak je alle relaties aan. Kiest als actieve relatie een andere standaard rol.
 de UDF ziet er dan zo uit:
