@@ -36,7 +36,14 @@ Dit is een **flow-analyse tussen twee tijdlijnen**:
 Met slechts één datumtabel kan Power BI maar **één filtercontext tegelijk toepassen**.
 
 Als dezelfde datumtabel zowel rijen als kolommen filtert, krijg je logisch gezien:
-![Order vs Delivery matrix]({{ "/resouces/images/matrix_twodatatables.jpg" | relative_url }})
+| Order Month | Delivery Jan | Delivery Feb | Delivery Mar |
+|--------------|-------------|-------------|-------------|
+| Jan | 120 | 120 | 120 |
+| Feb | 210 | 210 | 210 |
+| Mar | 175 | 175 | 175 |
+
+*Je kunt met DAX dit rechtbreien, maar dan maak je ingewikkelde formules die je overal moet toepassen.
+
 
 Wat je dan kunt doen is gebruik maken van een UDF in combinatie met Calculation Groups. Daarnaast maak je ook een tweede datumdimensie aan. Net zoals met de eerste datumdimensie maak je alle relaties aan. Kiest als actieve relatie een andere standaard rol.
 de UDF ziet er dan zo uit:
