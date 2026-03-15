@@ -1,4 +1,9 @@
-Just the facts ma'am
+---
+title: "Just the facts ma'am"
+date: 2026-03-15
+tags: [design, storytelling, powerbi, dashboards]
+categories: [powerbi, design]
+---
 
 Voordat je een rapport maakt, moet je eerst bepalen wat het onderliggende verhaal is. Storytelling wordt vaak genoemd. Maar hoe kun je een story bedenken die je kunt "tellen"? Het antwoord is te vinden in oude detectiveseries. Daarin zie je dezelfde structuur terug in vrijwel iedere aflevering. Pas in de laatste vijf minuten komt er een antwoord. Daarvoor zie je iets anders: heel veel vragen en "just the facts ma'am".
 
